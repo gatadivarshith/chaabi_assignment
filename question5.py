@@ -1,0 +1,8 @@
+list_A = input("Enter sentences of the first list, separated by ';': ").split(';')
+list_B= input("Enter sentences of the second list, separated by ';': ").split(';')
+set_A = set(list_A)
+set_B = set(list_B)
+common_sentences_from_lists = set_A.intersection(set_B)
+symmetric_difference = set_A.symmetric_difference(set_B)
+print("Common sentences from the lists:", common_sentences_from_lists)
+print("Symmetric difference:", symmetric_difference)
